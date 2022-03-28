@@ -74,13 +74,13 @@
                 <h1>Conversor de Temperatura</h1>
                 <div class="mb-3 row">
                     <select class="form-select" aria-label="Default select example" id="selectTemp" name="selectTemp">
-                        <option selected value="1">Celsius => Fahrenheit</option>
-                        <option value="2">Fahrenheit => Celsius</option>
+                        <option selected value="1" <%= selectOption == 1 ? "selected":""%>>Celsius => Fahrenheit</option>
+                        <option value="2" <%= selectOption == 2 ? "selected":""%>>Fahrenheit => Celsius</option>
                     </select>
                 </div>
                 <div class="mb-3 row">
                     <label for="valorRef" class="form-label">Valor:</label>
-                    <input type="number" class="form-control" id="valorRef" name="valorRef">
+                    <input type="number" class="form-control" id="valorRef" value="<%=value%>" name="valorRef">
                 </div>
                 <div>
                     <button type="submit" class="btn btn-primary mb-3">Converter</button>
